@@ -8,7 +8,7 @@
 
   1. Clone this repository: 
 
-  git clone https://github.com/anjali-sharma3/crypto-live-dashboard.git
+  git clone https://github.com/anjali-sharma3/Crypto-Assignment.git
 
   cd crypto-price-api
 
