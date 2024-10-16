@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet"
+    href="index.css">
+</head>
+
+<body>
+  <h2>Live Cryptocurrency Dashboard</h2>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-button active"
+        data-crypto="bitcoin">Bitcoin</button>
+      <button class="tab-button"
+        data-crypto="ethereum">Ethereum</button>
+      <button class="tab-button"
+        data-crypto="litecoin">Litecoin</button>
+      <button class="tab-button"
+        data-crypto="ripple">Ripple</button>
+    </div>
+
+    <!-- Date pickers for selecting date range -->
+    <div class="date-range">
+      <div class="date-input">
+        <label for="startDate">Start Date</label>
+        <input type="date"
+          id="startDate">
+      </div>
+      <div class="date-input">
+        <label for="endDate">End Date</label>
+        <input type="date"
+          id="endDate">
+      </div>
+      <button id="fetchDataBtn">Fetch Historical Data</button>
+    </div>
+
+    <!-- Canvas for the chart -->
+    <canvas id="priceChart"
+      width="400"
+      height="200"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+

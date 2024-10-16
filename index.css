@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+  margin: 5px;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.date-range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.date-input label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.date-range input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#fetchDataBtn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  height: 40px;
+  margin-top: 20px;
+}
+
+#fetchDataBtn:hover {
+  background-color: #0056b3;
+}
+
+canvas {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .tab-button {
+    font-size: 14px;
+  }
+
+  .date-range input {
+    font-size: 14px;
+  }
+
+  #fetchDataBtn {
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .date-range {
+    flex-direction: column;
+  }
+
+  .date-input {
+    width: 100%;
+  }
+
+  #fetchDataBtn {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
